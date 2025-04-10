@@ -1,22 +1,26 @@
 #include <stdio.h>
+int main (){
+    /*Variáveis carta um*/
+    int npt1 /*Número de pontos turísticos*/, populacao1;
+    float area1, PIB1;
+    char  nc1 [50]/*Nome da Cidade*/, cdc1 [50] /*Código da carta*/, estado1 [50] /*Uma letra de "A" a "H"*/;
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
-
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-
+    /*Variáveis carta dois*/
+    int npt2 /*Número de pontos turísticos*/, populacao2;
+    float area2, PIB2;
+    char  nc2 [50]/*Nome da Cidade*/, cdc2 [50] /*Código da carta*/, estado2 [50] /*Uma letra de "A" a "H"*/;
+        /*ENTRADA DE DADOS CARTA UM E DOIS*/
+        printf("Seja bem vindo ao Super Trunfo!\n");
+        printf("Para começar insira os dados de duas cartas...\n");  
+        printf("Em sua primeira carta insira uma letra de A a H que represente um dos oito estados:\n");
+        /*Estado*/
+        scanf(" %c", &estado1);
+        printf("Agora para a segunda carta:\n");
+        scanf(" %c", &estado2);
+        /*Código da carta*/
+        printf("Insira o código para a primeira carta (Escolha entre as opções 01-02-03-04):\n");
+        scanf("%s", &cdc1);
+        printf("Faça o mesmo para a segunda carta (Escolha entre as opções 01-02-03-04):\n");
+        scanf("%s", &cdc2);
     return 0;
 }
